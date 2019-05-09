@@ -1,0 +1,52 @@
+@media screen and (min-width: 240px) and (max-width: 768px) {
+  .video {
+    max-width: 100%;
+    height: 200px; }
+
+  .localmap {
+    max-width: 100%;
+    height: 200px;
+    padding-top: 10px; }
+
+  section #owl-demo .item img {
+    height: auto; }
+
+  .section-1 .title span {
+    font-size: 34px; }
+
+  .header img {
+    width: 150px; }
+
+  .btn-menu {
+    left: 91%;
+    top: calc(30% + 13px); }
+
+  .section-1 .title .nd p {
+    font-size: 12px; }
+
+  .contact a {
+    font-size: 12px; }
+
+  .contact span {
+    font-size: 14px;
+    padding: 0; }
+
+  .fix-row {
+    padding: 0 !important; }
+
+  .contact::before {
+    height: 100%; }
+
+  .fix-couter {
+    width: 50%; }
+
+  .counter p {
+    font-size: 12px; }
+
+  .counter {
+    background-position: center; }
+
+  .counter::before {
+    height: 100%; } }
+
+/*# sourceMappingURL=responsive.css.map */

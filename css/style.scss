@@ -1,0 +1,255 @@
+// header
+$backgroun-header:#ffffff;
+$color-menu-header:#000000;
+$color-hover-item-header: #fc4303;
+$font-size-menu:18px;
+// end
+
+// section-1
+$color-noi-dung-section-1:#ffffff;
+$font-size-title:64px;
+$font-size-p:18px;
+// end
+
+// dự án nổi bật
+$background-project:#f35e01;
+$color-h2:#ffffff;
+$color-counter-p:#ffffff;
+$font-size-counter-span:40px;
+$font-size-counter-p:18px;
+// end
+
+// location
+$color-title-location:#f35e01;
+// end
+
+@mixin button-view($backgound-color, $color, $p-top-bottom, $p-left-right) {
+    background: $backgound-color;
+    border: 1px solid $color;
+    color: $color;
+    padding: $p-top-bottom $p-left-right;
+}
+
+.container {
+    max-width: 1250px !important;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+.header {
+    box-shadow: 0px 4px 10px -6px;
+
+    .nav-item {
+        padding: 0 5px;
+
+        .nav-link {
+            font-size: $font-size-menu;
+            text-transform: uppercase;
+            color: $color-menu-header;
+
+            &:hover {
+                color: $color-hover-item-header;
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+section {
+    #owl-demo .item img {
+        display: block;
+        width: 100%;
+        height: auto;
+        height: 631px;
+    }
+
+    .owl-dots {
+        display: none !important;
+    }
+}
+
+.section-1 {
+    background-image: url(http://wallpaper.phunuvn.net/files/hinh-nen-noi-that/19731-interior-design-1920x1080-photography-wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.8);
+        content: '';
+        width: 100%;
+        height: 404px
+    }
+
+    .content-nd {
+        padding: 30px 0;
+    }
+
+    .title {
+        span {
+            color: $color-noi-dung-section-1;
+            font-size: $font-size-title;
+            font-weight: 500;
+        }
+
+        .nd {
+            p {
+                color: $color-noi-dung-section-1;
+                font-size: $font-size-p;
+                display: block;
+            }
+        }
+
+    }
+}
+
+.Outstanding-project {
+    background: $background-project;
+
+    h2 {
+        color: $color-h2;
+    }
+
+    img {
+        width: 100%;
+        border: 10px solid white;
+    }
+
+    .btn-view button {
+        @include button-view(transparent, white, 5px, 10px)
+    }
+}
+
+.counter {
+    background-image: url('../images/body/counter.png');
+    // height: 175px;
+    width: 100%;
+    background-position: 0px -500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: '';
+        background: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 175px;
+    }
+
+    p {
+        color: $color-counter-p;
+        font-size: $font-size-counter-p;
+    }
+
+    span {
+        color: $color-counter-p;
+        font-size: $font-size-counter-span
+    }
+}
+
+.tintuc-new {
+    .card {
+        margin: 0 10px;
+        outline: none;
+        border: none;
+    }
+
+    .card-body {
+        padding: 0;
+    }
+
+    .card-text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 25px;
+        -webkit-line-clamp: 3;
+        height: 75px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+    }
+
+    .line-left {
+        width: 30px;
+        height: 5px;
+        background: #f35e01;
+    }
+
+    span {
+        font-weight: bold;
+    }
+
+    .btn-view button {
+        @include button-view(transparent, black, 5px, 10px);
+    }
+}
+
+.contact {
+    background-image: url(https://idoltv.vn/wp-content/uploads/2018/10/IDOLTV-hinh-nen-game-fortnite-may-tinh-full-hd-903573.jpg);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: '';
+        background: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 555px;
+    }
+
+    span {
+        display: block;
+        padding: 6px 0px;
+        color: white;
+        font-size: 18px;
+    }
+
+    a {
+        color: white;
+        font-size: 18px;
+    }
+
+    h1 {
+        color: $color-title-location;
+        text-transform: uppercase;
+    }
+}
+
+.footer {
+    background-image: url('../images/body/counter.png');
+    height: 175px;
+    width: 100%;
+    background-position: 0px -500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: '';
+        background: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 200px;
+    }
+}
+
+
+@import "responsive";
