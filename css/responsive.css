@@ -47,6 +47,18 @@
     background-position: center; }
 
   .counter::before {
-    height: 100%; } }
+    height: 100%; }
+
+  .slick-prev, .slick-next {
+    display: none !important; }
+
+  .footer::before {
+    height: 100%; }
+
+  .footer {
+    background-position: center; }
+
+  .tintuc-new .btn-view button {
+    margin: 20px 0; } }
 
 /*# sourceMappingURL=responsive.css.map */

@@ -10,7 +10,6 @@ $color-noi-dung-section-1:#ffffff;
 $font-size-title:64px;
 $font-size-p:18px;
 // end
-
 // dự án nổi bật
 $background-project:#f35e01;
 $color-h2:#ffffff;
@@ -21,14 +20,42 @@ $font-size-counter-p:18px;
 
 // location
 $color-title-location:#f35e01;
+
 // end
 
+// window onload
+.fixed {
+    width: 100%;
+    background: $backgroun-header;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    box-shadow: 0px 4px 10px -6px;
+    transition: height 0.6s;
+}
+
+.header.fixed img {
+    height: 40px !important;
+    transition: height 0.6s;
+}
+
+.active-2 {
+    color: $color-hover-item-header !important;
+}
+
+// end
+
+// ham tai su dung
 @mixin button-view($backgound-color, $color, $p-top-bottom, $p-left-right) {
     background: $backgound-color;
     border: 1px solid $color;
     color: $color;
     padding: $p-top-bottom $p-left-right;
 }
+
+// end
+
 
 .container {
     max-width: 1250px !important;
@@ -47,6 +74,7 @@ body::-webkit-scrollbar-thumb {
     outline: 1px solid slategrey;
 }
 
+// header
 .header {
     box-shadow: 0px 4px 10px -6px;
 
@@ -57,21 +85,25 @@ body::-webkit-scrollbar-thumb {
             font-size: $font-size-menu;
             text-transform: uppercase;
             color: $color-menu-header;
+            font-family: 'UTM Neo Sans Intel';
 
             &:hover {
                 color: $color-hover-item-header;
                 transition: 0.3s;
+
             }
         }
     }
 }
 
+// end
+
+// slide
 section {
     #owl-demo .item img {
         display: block;
         width: 100%;
-        height: auto;
-        height: 631px;
+        height: 700px;
     }
 
     .owl-dots {
@@ -79,6 +111,9 @@ section {
     }
 }
 
+// end
+
+// ve chung toi
 .section-1 {
     background-image: url(http://wallpaper.phunuvn.net/files/hinh-nen-noi-that/19731-interior-design-1920x1080-photography-wallpaper.jpg);
     background-position: center;
@@ -91,7 +126,7 @@ section {
         background: rgba(0, 0, 0, 0.8);
         content: '';
         width: 100%;
-        height: 404px
+        height: 381px
     }
 
     .content-nd {
@@ -103,6 +138,7 @@ section {
             color: $color-noi-dung-section-1;
             font-size: $font-size-title;
             font-weight: 500;
+            font-family: 'UTM Neo Sans Intel';
         }
 
         .nd {
@@ -110,29 +146,64 @@ section {
                 color: $color-noi-dung-section-1;
                 font-size: $font-size-p;
                 display: block;
+                font-weight: 100;
+                font-family: 'UTM Neo Sans Intel';
             }
         }
 
     }
 }
 
+// end
+
+// du an cua chung toi
 .Outstanding-project {
     background: $background-project;
 
     h2 {
         color: $color-h2;
+        font-family: 'UTM Neo Sans Intel';
     }
 
     img {
-        width: 100%;
         border: 10px solid white;
+        height: 263px;
+        width: 100%;
+        overflow: hidden;
+
+        &:hover {
+            transition: all .2s ease-in-out;
+            transform: scale(1.05);
+        }
+    }
+
+    .overly {
+        // position: relative;
+        // margin-top: -70px;
+        // visibility:hidden;
+        // color: #ffffff;
+        // font-size: 35px;
+    }
+
+    .project-item {
+
+        // height: 263px;
+        overflow: hidden;
     }
 
     .btn-view button {
-        @include button-view(transparent, white, 5px, 10px)
+        @include button-view(transparent, white, 5px, 10px);
+
+        &:hover {
+            background: white;
+            color: #000000;
+            border: 1px solid black;
+            transition: all .2s ease-in-out;
+        }
     }
 }
 
+// end
 .counter {
     background-image: url('../images/body/counter.png');
     // height: 175px;
@@ -140,7 +211,6 @@ section {
     background-position: 0px -500px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     position: relative;
 
     &::before {
@@ -148,12 +218,13 @@ section {
         content: '';
         background: rgba(0, 0, 0, 0.7);
         width: 100%;
-        height: 175px;
+        height: 170px;
     }
 
     p {
         color: $color-counter-p;
         font-size: $font-size-counter-p;
+        font-family: 'UTM Neo Sans Intel';
     }
 
     span {
@@ -181,6 +252,7 @@ section {
         height: 75px;
         display: -webkit-box;
         -webkit-box-orient: vertical;
+        font-family: 'UTM Neo Sans Intel';
     }
 
     .line-left {
@@ -191,10 +263,26 @@ section {
 
     span {
         font-weight: bold;
+        font-family: 'UTM Neo Sans Intel';
+    }
+
+    h4,h2 {
+        font-family: 'UTM Neo Sans Intel';
     }
 
     .btn-view button {
         @include button-view(transparent, black, 5px, 10px);
+
+        &:hover {
+            background: #000000;
+            color: white;
+            border: 1px solid white;
+            transition: all .2s ease-in-out;
+        }
+    }
+
+    .slick-slide img {
+        height: 260px;
     }
 }
 
@@ -220,6 +308,7 @@ section {
         padding: 6px 0px;
         color: white;
         font-size: 18px;
+        font-family: 'UTM Neo Sans Intel';
     }
 
     a {
@@ -230,9 +319,12 @@ section {
     h1 {
         color: $color-title-location;
         text-transform: uppercase;
+        font-family: 'UTM Neo Sans Intel';
     }
 }
-
+.doi-tac{
+    
+}
 .footer {
     background-image: url('../images/body/counter.png');
     height: 175px;
