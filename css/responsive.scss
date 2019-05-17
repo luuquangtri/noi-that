@@ -42,6 +42,7 @@
     .contact span{
         font-size: 14px;
         padding: 0;
+        line-height: 1.5;
     }
     .fix-row{
         padding: 0 !important;
@@ -74,6 +75,33 @@
         margin: 20px 0;
     }
     .tintuc-new .slick-slide img{
-        height: auto;
+        height: 150px;
+    }
+    .fixed{
+        position: static;
+    }
+    .section-1::before{
+        height: 100%;
+    }
+    .slideshow{
+        height: 50vh;
+    }
+    .slideshow img{
+        width: 200px;
+    }
+    .slideshow .arrows .prev{
+        left: 0;
+    }
+    .slideshow .arrows .next{
+        right: 0;
+    }
+    .Outstanding-project .caption a{
+        justify-content: flex-end;
+    }
+    .Outstanding-project img{
+        height: 100%;
+    }
+    .Outstanding-project .caption{
+        top: 80%;
     }
 }

@@ -41,12 +41,206 @@ body::-webkit-scrollbar-thumb {
         color: #fc4303;
         transition: 0.3s; }
 
-section #owl-demo .item img {
-  display: block;
+body {
+  font: 14px/2 "Open sans", sans-serif;
+  letter-spacing: 0.05em; }
+
+.btn {
+  display: inline-block;
+  padding: 13px 20px;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  background: transparent;
+  border: 1px solid #e1e1e1;
+  font: 12px/1.2 "Oswald", sans-serif;
+  letter-spacing: 0.4em;
+  text-align: center;
+  text-indent: 2px;
+  text-transform: uppercase;
+  transition: color 0.1s linear 0.05s; }
+  .btn::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #e1e1e1;
+    z-index: 1;
+    opacity: 0;
+    transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0.2s; }
+  .btn::after {
+    transition: border 0.1s linear 0.05s; }
+  .btn .btn-inner {
+    position: relative;
+    z-index: 2; }
+  .btn:hover {
+    color: #373737;
+    transition: color 0.1s linear 0s; }
+    .btn:hover::before {
+      top: 0;
+      height: 100%;
+      opacity: 1;
+      transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0s; }
+    .btn:hover::after {
+      border-color: #373737;
+      transition: border 0.1s linear 0s; }
+
+.slideshow {
+  overflow: hidden;
+  position: relative;
   width: 100%;
-  height: 700px; }
-section .owl-dots {
-  display: none !important; }
+  height: 100vh;
+  z-index: 1; }
+  .slideshow .slideshow-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .slideshow .slides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; }
+  .slideshow .slide {
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease; }
+    .slideshow .slide.is-active {
+      display: block; }
+    .slideshow .slide.is-loaded {
+      opacity: 1; }
+    .slideshow .slide .caption {
+      padding: 0 100px; }
+    .slideshow .slide .image-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      z-index: 1;
+      background-size: cover;
+      image-rendering: optimizeQuality; }
+      .slideshow .slide .image-container::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7); }
+    .slideshow .slide .image {
+      width: 100%;
+      width: 100%;
+      object-fit: cover;
+      height: 100%; }
+    .slideshow .slide-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      color: #fff;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .slideshow .slide .title {
+      margin: 0 auto 15px;
+      max-width: 1000px;
+      font: 300 50px/1.2 "Oswald", sans-serif;
+      letter-spacing: 0.35em;
+      text-transform: uppercase; }
+    .slideshow .slide .text {
+      margin: 0 auto;
+      max-width: 1000px;
+      font-size: 18px;
+      line-height: 1.4; }
+      .slideshow .slide .text p {
+        text-transform: uppercase;
+        color: #f2b032;
+        font-family: 'UTM Neo Sans Intel';
+        font-weight: 500;
+        font-weight: bold; }
+    .slideshow .slide .btn {
+      margin: 15px 0 0;
+      border-color: #fff; }
+      .slideshow .slide .btn::before {
+        background: #fff; }
+  .slideshow .pagination {
+    position: absolute;
+    bottom: 35px;
+    left: 44%;
+    width: 100%;
+    height: 12px;
+    cursor: default;
+    z-index: 2;
+    text-align: center; }
+    .slideshow .pagination .item {
+      display: inline-block;
+      padding: 15px 5px;
+      position: relative;
+      width: 46px;
+      height: 32px;
+      cursor: pointer;
+      text-indent: -999em;
+      z-index: 1; }
+      .slideshow .pagination .item + .page {
+        margin-left: -2px; }
+      .slideshow .pagination .item::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 5px;
+        width: 36px;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.5);
+        transition: background 0.2s ease; }
+      .slideshow .pagination .item::after {
+        width: 0;
+        background: #fff;
+        z-index: 2;
+        transition: width 0.2s ease; }
+      .slideshow .pagination .item:hover::before, .slideshow .pagination .item.is-active::before {
+        background-color: #fff; }
+  .slideshow .arrows .arrow {
+    margin: -33px 0 0;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    z-index: 3; }
+  .slideshow .arrows .prev {
+    left: 30px; }
+    .slideshow .arrows .prev:hover .svg {
+      left: -10px; }
+  .slideshow .arrows .next {
+    right: 30px; }
+    .slideshow .arrows .next:hover .svg {
+      left: 10px; }
+  .slideshow .arrows .svg {
+    position: relative;
+    left: 0;
+    width: 14px;
+    height: 26px;
+    fill: #fff;
+    transition: left 0.2s ease; }
 
 .section-1 {
   background-image: url(http://wallpaper.phunuvn.net/files/hinh-nen-noi-that/19731-interior-design-1920x1080-photography-wallpaper.jpg);
@@ -59,7 +253,7 @@ section .owl-dots {
     background: rgba(0, 0, 0, 0.8);
     content: '';
     width: 100%;
-    height: 381px; }
+    height: 388px; }
   .section-1 .content-nd {
     padding: 30px 0; }
   .section-1 .title span {
@@ -69,24 +263,61 @@ section .owl-dots {
     font-family: 'UTM Neo Sans Intel'; }
   .section-1 .title .nd p {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 14px;
     display: block;
     font-weight: 100;
     font-family: 'UTM Neo Sans Intel'; }
 
 .Outstanding-project {
   background: #f35e01; }
+  .Outstanding-project .fix-w-h {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 5px solid white;
+    position: relative; }
+    .Outstanding-project .fix-w-h:hover img {
+      transform: scale(1.1);
+      transition: all .4s ease-in-out;
+      filter: brightness(130%); }
+    .Outstanding-project .fix-w-h:hover .caption {
+      transform: translateY(-70%);
+      transition: all 0.4s; }
+  .Outstanding-project .caption {
+    position: absolute;
+    text-transform: uppercase;
+    top: 85%;
+    left: 30%;
+    font-size: 20px; }
+    .Outstanding-project .caption a {
+      display: flex;
+      text-decoration: none;
+      color: white;
+      justify-content: center;
+      font-family: 'UTM Neo Sans Intel'; }
+    .Outstanding-project .caption .btn {
+      display: inline-block;
+      padding: 13px 20px;
+      color: #fff;
+      text-decoration: none;
+      position: relative;
+      background: transparent;
+      border: 1px solid #e1e1e1;
+      font: 12px/1.2 "Oswald", sans-serif;
+      letter-spacing: 0.4em;
+      text-align: center;
+      text-indent: 2px;
+      text-transform: uppercase;
+      transition: color 0.1s linear 0.05s; }
+      .Outstanding-project .caption .btn:hover {
+        color: #373737;
+        transition: color 0.1s linear 0s; }
   .Outstanding-project h2 {
     color: #ffffff;
     font-family: 'UTM Neo Sans Intel'; }
   .Outstanding-project img {
-    border: 10px solid white;
     height: 263px;
-    width: 100%;
-    overflow: hidden; }
-    .Outstanding-project img:hover {
-      transition: all .2s ease-in-out;
-      transform: scale(1.05); }
+    width: 100%; }
   .Outstanding-project .project-item {
     overflow: hidden; }
   .Outstanding-project .btn-view button {
@@ -112,7 +343,7 @@ section .owl-dots {
     content: '';
     background: rgba(0, 0, 0, 0.7);
     width: 100%;
-    height: 170px; }
+    height: 200px; }
   .counter p {
     color: #ffffff;
     font-size: 18px;
@@ -143,7 +374,8 @@ section .owl-dots {
 .tintuc-new span {
   font-weight: bold;
   font-family: 'UTM Neo Sans Intel'; }
-.tintuc-new h4, .tintuc-new h2 {
+.tintuc-new h4,
+.tintuc-new h2 {
   font-family: 'UTM Neo Sans Intel'; }
 .tintuc-new .btn-view button {
   background: transparent;
@@ -171,20 +403,24 @@ section .owl-dots {
     content: '';
     background: rgba(0, 0, 0, 0.7);
     width: 100%;
-    height: 555px; }
+    height: 375px; }
   .contact span {
     display: block;
     padding: 6px 0px;
     color: white;
-    font-size: 18px;
-    font-family: 'UTM Neo Sans Intel'; }
+    font-size: 14px;
+    font-family: 'UTM Neo Sans Intel';
+    line-height: 1.2; }
   .contact a {
     color: white;
-    font-size: 18px; }
+    font-size: 14px; }
   .contact h1 {
     color: #f35e01;
     text-transform: uppercase;
     font-family: 'UTM Neo Sans Intel'; }
+
+.doi-tac h2 {
+  font-family: 'UTM Neo Sans Intel'; }
 
 .footer {
   background-image: url("../images/body/counter.png");
@@ -199,7 +435,13 @@ section .owl-dots {
     content: '';
     background: rgba(0, 0, 0, 0.7);
     width: 100%;
-    height: 200px; }
+    height: 175px; }
+  .footer .cprht {
+    font-family: 'UTM Neo Sans Intel'; }
+  .footer .social img:hover {
+    transform: translateY(-5px);
+    filter: brightness(150%);
+    transition: all 0.6s; }
 
 @media screen and (min-width: 240px) and (max-width: 768px) {
   .video {
@@ -232,7 +474,8 @@ section .owl-dots {
 
   .contact span {
     font-size: 14px;
-    padding: 0; }
+    padding: 0;
+    line-height: 1.5; }
 
   .fix-row {
     padding: 0 !important; }
@@ -265,6 +508,33 @@ section .owl-dots {
     margin: 20px 0; }
 
   .tintuc-new .slick-slide img {
-    height: auto; } }
+    height: 150px; }
+
+  .fixed {
+    position: static; }
+
+  .section-1::before {
+    height: 100%; }
+
+  .slideshow {
+    height: 50vh; }
+
+  .slideshow img {
+    width: 200px; }
+
+  .slideshow .arrows .prev {
+    left: 0; }
+
+  .slideshow .arrows .next {
+    right: 0; }
+
+  .Outstanding-project .caption a {
+    justify-content: flex-end; }
+
+  .Outstanding-project img {
+    height: 100%; }
+
+  .Outstanding-project .caption {
+    top: 80%; } }
 
 /*# sourceMappingURL=style.css.map */
