@@ -32,86 +32,145 @@
         left: 91%;
         top: calc(30% + 13px);
     }
-    .section-1 .title .nd p{
+
+    .section-1 .title .nd p {
         font-size: 12px;
     }
-    .contact a{
+
+    .contact a {
         font-size: 12px;
-       
+
     }
-    .contact span{
+
+    .contact span {
         font-size: 14px;
         padding: 0;
         line-height: 1.5;
     }
-    .fix-row{
+
+    .fix-row {
         padding: 0 !important;
     }
-    .contact::before{
+
+    .contact::before {
         height: 100%;
     }
-    .fix-couter{
+
+    .fix-couter {
         width: 50%;
     }
-    .counter p{
+
+    .counter p {
         font-size: 12px;
     }
-    .counter{
+
+    .counter {
         background-position: center;
     }
-    .counter::before{
-        height:100%;
+
+    .counter::before {
+        height: 100%;
     }
-    .slick-prev, .slick-next{
+
+    .slick-prev,
+    .slick-next {
         display: none !important;
     }
-    .footer::before{
+
+    .footer::before {
         height: 100%;
     }
-    .footer{
+
+    .footer {
         background-position: center;
     }
-    .tintuc-new .btn-view button{
+
+    .tintuc-new .btn-view button {
         margin: 20px 0;
     }
-    .tintuc-new .slick-slide img{
+
+    .tintuc-new .slick-slide img {
         height: 150px;
     }
-    .fixed{
+
+    .fixed {
         position: static;
     }
-    .section-1::before{
+
+    .section-1::before {
         height: 100%;
     }
-    .slideshow{
+
+    .slideshow {
         height: 50vh;
     }
-    .slideshow img{
+
+    .slideshow img {
         width: 150px;
     }
-    .slideshow .arrows .prev{
+
+    .slideshow .arrows .prev {
         left: 0;
     }
-    .slideshow .arrows .next{
+
+    .slideshow .arrows .next {
         right: 0;
     }
-    .Outstanding-project .caption a{
+
+    .Outstanding-project .caption a {
         justify-content: flex-end;
     }
-    .Outstanding-project img{
+
+    .Outstanding-project img {
         height: 100%;
     }
-    .Outstanding-project .caption{
+
+    .Outstanding-project .caption {
         top: 80%;
     }
-    .slideshow .slide .text p{
+
+    .slideshow .slide .text p {
         font-size: 12px;
         margin: 10px 0 10px 0;
     }
-    .slideshow .slide .title{
+
+    .slideshow .slide .title {
         margin: 0;
     }
-    .slideshow .slide .btn{
+
+    .slideshow .slide .btn {
+        margin: 0;
+    }
+
+    #team .cquotes ul {
+        list-style: none;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 60px;
+        color: #fff;
+        padding-left: 24px;
+    }
+
+    #team .cquotes ul li img{
+        float: none;
+        margin: 0;
+        max-width: 100%;
+    }
+    #team .cquotes ul li.right{
+        padding: 0;
+    }
+    #team .cquotes ul li.right,
+    #team .cquotes ul li.left {
+        float: none !important;
+        background: none !important;
+        width: 100%;
+        margin-bottom: 60px;
+        padding-right: 24px;
+        margin-top: -30px;
+    }
+    #team .cquotes ul li.right img{
+        float: none;
+        max-width: 100%;
         margin: 0;
     }
 }

@@ -121,8 +121,9 @@ body {
 }
 
 .btn {
-    
+
     @include btn();
+
     &::before {
         content: "";
         display: block;
@@ -269,9 +270,11 @@ body {
             max-width: 1000px;
             font-size: 18px;
             line-height: 1.4;
-            p{
+
+            p {
                 text-transform: uppercase;
-                color: #f2b032;;
+                color: #f2b032;
+                ;
                 font-family: 'UTM Neo Sans Intel';
                 font-weight: 500;
                 font-weight: bold;
@@ -432,6 +435,7 @@ body {
         overflow: hidden;
         border: 5px solid white;
         position: relative;
+
         &:hover {
             img {
                 transform: scale(1.1);
@@ -439,34 +443,39 @@ body {
                 filter: brightness(130%);
 
             }
-            .caption{
+
+            .caption {
                 transform: translateY(-70%);
-                transition: all .4s ;
+                transition: all .4s;
             }
         }
     }
-    .caption{
+
+    .caption {
         position: absolute;
         text-transform: uppercase;
         top: 85%;
         left: 30%;
         font-size: 20px;
 
-        a{
+        a {
             display: flex;
             text-decoration: none;
             color: white;
             justify-content: center;
             font-family: 'UTM Neo Sans Intel';
         }
-        .btn{
+
+        .btn {
             @include btn();
-            &:hover{
+
+            &:hover {
                 color: #373737;
                 transition: color 0.1s linear 0s;
             }
         }
     }
+
     h2 {
         color: $color-h2;
         font-family: 'UTM Neo Sans Intel';
@@ -639,17 +648,89 @@ body {
         width: 100%;
         height: 175px;
     }
-    .cprht{
+
+    .cprht {
         font-family: 'UTM Neo Sans Intel';
     }
-    .social img{
-        &:hover{
+
+    .social img {
+        &:hover {
             transform: translateY(-5px);
             filter: brightness(150%);
-            transition:all 0.6s; 
+            transition: all 0.6s;
         }
     }
 }
 
+// ve chung toi
+#team {
+    padding-top: 40px;
 
+    .full-nd-intro {
+        color: black;
+    }
+
+    .cquotes {
+        padding-top: 50px;
+        background: url(http://nelo.com.vn/images/quotesbg.png) bottom center no-repeat #000;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-attachment: fixed;
+        padding-bottom: 50px;
+
+        ul {
+            list-style: none;
+            width: 1100px;
+            margin: 0 auto;
+            padding-top: 60px;
+            color: #fff;
+
+            li {
+                width: 535px;
+                margin-top: -60px;
+
+                img {
+                    float: right;
+                    margin: 0 30px 0 20px;
+                }
+            }
+
+            li.left {
+                float: left;
+                background: url(http://nelo.com.vn/images/listyle2.png) right top no-repeat;
+                padding-right: 24px;
+                text-align: left;
+            }
+
+            li.right {
+                float: right;
+                background: url(http://nelo.com.vn/images/listyle2.png) left top no-repeat;
+                padding-left: 24px;
+                text-align: right;
+
+                img {
+                    float: left;
+                    margin: 0 20px 0 30px;
+                }
+            }
+        }
+
+        h2 {
+            text-align: center;
+            color: #fff;
+        }
+
+        .clearer {
+            clear: both;
+        }
+
+        p {
+            line-height: 20px;
+        }
+    }
+}
+
+// end
 @import "responsive";

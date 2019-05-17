@@ -282,7 +282,7 @@ body {
       filter: brightness(130%); }
     .Outstanding-project .fix-w-h:hover .caption {
       transform: translateY(-70%);
-      transition: all 0.4s; }
+      transition: all .4s; }
   .Outstanding-project .caption {
     position: absolute;
     text-transform: uppercase;
@@ -443,6 +443,52 @@ body {
     filter: brightness(150%);
     transition: all 0.6s; }
 
+#team {
+  padding-top: 40px; }
+  #team .full-nd-intro {
+    color: black; }
+  #team .cquotes {
+    padding-top: 50px;
+    background: url(http://nelo.com.vn/images/quotesbg.png) bottom center no-repeat #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 50px; }
+    #team .cquotes ul {
+      list-style: none;
+      width: 1100px;
+      margin: 0 auto;
+      padding-top: 60px;
+      color: #fff; }
+      #team .cquotes ul li {
+        width: 535px;
+        margin-top: -60px; }
+        #team .cquotes ul li img {
+          float: right;
+          margin: 0 30px 0 20px; }
+      #team .cquotes ul li.left {
+        float: left;
+        background: url(http://nelo.com.vn/images/listyle2.png) right top no-repeat;
+        padding-right: 24px;
+        text-align: left; }
+      #team .cquotes ul li.right {
+        float: right;
+        background: url(http://nelo.com.vn/images/listyle2.png) left top no-repeat;
+        padding-left: 24px;
+        text-align: right; }
+        #team .cquotes ul li.right img {
+          float: left;
+          margin: 0 20px 0 30px; }
+    #team .cquotes h2 {
+      text-align: center;
+      color: #fff; }
+    #team .cquotes .clearer {
+      clear: both; }
+    #team .cquotes p {
+      line-height: 20px; }
+
 @media screen and (min-width: 240px) and (max-width: 768px) {
   .video {
     max-width: 100%;
@@ -495,7 +541,8 @@ body {
   .counter::before {
     height: 100%; }
 
-  .slick-prev, .slick-next {
+  .slick-prev,
+  .slick-next {
     display: none !important; }
 
   .footer::before {
@@ -545,6 +592,36 @@ body {
     margin: 0; }
 
   .slideshow .slide .btn {
+    margin: 0; }
+
+  #team .cquotes ul {
+    list-style: none;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 60px;
+    color: #fff;
+    padding-left: 24px; }
+
+  #team .cquotes ul li img {
+    float: none;
+    margin: 0;
+    max-width: 100%; }
+
+  #team .cquotes ul li.right {
+    padding: 0; }
+
+  #team .cquotes ul li.right,
+  #team .cquotes ul li.left {
+    float: none !important;
+    background: none !important;
+    width: 100%;
+    margin-bottom: 60px;
+    padding-right: 24px;
+    margin-top: -30px; }
+
+  #team .cquotes ul li.right img {
+    float: none;
+    max-width: 100%;
     margin: 0; } }
 
 /*# sourceMappingURL=style.css.map */
