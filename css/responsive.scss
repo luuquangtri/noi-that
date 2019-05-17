@@ -87,7 +87,7 @@
         height: 50vh;
     }
     .slideshow img{
-        width: 200px;
+        width: 150px;
     }
     .slideshow .arrows .prev{
         left: 0;
@@ -103,5 +103,15 @@
     }
     .Outstanding-project .caption{
         top: 80%;
+    }
+    .slideshow .slide .text p{
+        font-size: 12px;
+        margin: 10px 0 10px 0;
+    }
+    .slideshow .slide .title{
+        margin: 0;
+    }
+    .slideshow .slide .btn{
+        margin: 0;
     }
 }
