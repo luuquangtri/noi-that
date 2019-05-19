@@ -10,7 +10,7 @@
 
 .header.fixed img {
   height: 40px !important;
-  transition: height 0.6s; }
+  transition: all 0.4s; }
 
 .active-2 {
   color: #fc4303 !important; }
@@ -258,15 +258,14 @@ body {
     padding: 30px 0; }
   .section-1 .title span {
     color: #ffffff;
-    font-size: 64px;
+    font-size: 40px;
     font-weight: 500;
-    font-family: 'UTM Neo Sans Intel'; }
+    font-family: "UTM Neo Sans Intel"; }
   .section-1 .title .nd p {
     color: #ffffff;
     font-size: 14px;
     display: block;
-    font-weight: 100;
-    font-family: 'UTM Neo Sans Intel'; }
+    font-family: "Segoe UI"; }
 
 .Outstanding-project {
   background: #f35e01; }
@@ -286,15 +285,9 @@ body {
   .Outstanding-project .caption {
     position: absolute;
     text-transform: uppercase;
-    top: 85%;
-    left: 30%;
-    font-size: 20px; }
-    .Outstanding-project .caption a {
-      display: flex;
-      text-decoration: none;
-      color: white;
-      justify-content: center;
-      font-family: 'UTM Neo Sans Intel'; }
+    top: 88%;
+    font-size: 20px;
+    width: 100%; }
     .Outstanding-project .caption .btn {
       display: inline-block;
       padding: 13px 20px;
@@ -315,6 +308,9 @@ body {
   .Outstanding-project h2 {
     color: #ffffff;
     font-family: 'UTM Neo Sans Intel'; }
+  .Outstanding-project h4 {
+    font-family: "UTM Neo Sans Intel";
+    color: white; }
   .Outstanding-project img {
     height: 263px;
     width: 100%; }
@@ -366,7 +362,7 @@ body {
   height: 75px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  font-family: 'UTM Neo Sans Intel'; }
+  font-family: "Segoe UI"; }
 .tintuc-new .line-left {
   width: 30px;
   height: 5px;
@@ -391,7 +387,7 @@ body {
   height: 260px; }
 
 .contact {
-  background-image: url(https://idoltv.vn/wp-content/uploads/2018/10/IDOLTV-hinh-nen-game-fortnite-may-tinh-full-hd-903573.jpg);
+  background-image: url(http://wallpaper.phunuvn.net/webmaster/wallpapers/hinh-nen-noi-that/19731-interior-design-1920x1080-photography-wallpaper.jpg);
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -417,7 +413,11 @@ body {
   .contact h1 {
     color: #f35e01;
     text-transform: uppercase;
-    font-family: 'UTM Neo Sans Intel'; }
+    font-family: 'UTM Neo Sans Intel';
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 10px; }
 
 .doi-tac h2 {
   font-family: 'UTM Neo Sans Intel'; }
@@ -447,6 +447,10 @@ body {
   padding-top: 40px; }
   #team .full-nd-intro {
     color: black; }
+  #team h2 {
+    font-family: "UTM Neo Sans Intel"; }
+  #team p {
+    font-family: "UTM Neo Sans Intel"; }
   #team .cquotes {
     padding-top: 50px;
     background: url(http://nelo.com.vn/images/quotesbg.png) bottom center no-repeat #000;
@@ -483,12 +487,213 @@ body {
           margin: 0 20px 0 30px; }
     #team .cquotes h2 {
       text-align: center;
-      color: #fff; }
+      color: #fff;
+      font-family: "UTM Neo Sans Intel";
+      padding-bottom: 10px; }
     #team .cquotes .clearer {
       clear: both; }
     #team .cquotes p {
-      line-height: 20px; }
+      line-height: 20px;
+      font-family: "UTM Neo Sans Intel"; }
+    #team .cquotes strong {
+      font-family: "UTM Neo Sans Intel"; }
 
+.navigation .nav-tabs .nav-item.show .nav-link,
+.navigation .nav-tabs .nav-link.active {
+  border: none;
+  color: #fc4303; }
+.navigation .nav-tabs .nav-link:focus:hover,
+.navigation .nav-tabs .nav-link:hover {
+  border: none; }
+.navigation .nav-tabs .nav-item .nav-link {
+  text-transform: uppercase;
+  font-family: "UTM Neo Sans Intel"; }
+.navigation ul li a {
+  color: #000000; }
+  .navigation ul li a:hover {
+    color: #fc4303; }
+.navigation .card {
+  outline: none;
+  border: none; }
+.navigation .card-body {
+  padding: 0; }
+.navigation .card-text {
+  overflow: hidden;
+  line-height: 25px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  font-family: 'UTM Neo Sans Intel'; }
+.navigation .line-left {
+  width: 30px;
+  height: 5px;
+  background: #f35e01; }
+.navigation span {
+  font-weight: bold;
+  font-family: 'UTM Neo Sans Intel'; }
+.navigation h4,
+.navigation h2 {
+  font-family: 'UTM Neo Sans Intel'; }
+.navigation .tab-pane.active {
+  animation: slide-down 0.5s ease-out; }
+.navigation .post-icon {
+  position: absolute;
+  z-index: 99;
+  top: 10px;
+  border-radius: 15%;
+  background: #f2c341;
+  left: 90%;
+  padding: 0px 7px; }
+.navigation .fa-picture-o {
+  color: white; }
+.navigation .post-meta {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  z-index: 99; }
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(100%); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+.navigation .owl-prev {
+  float: left;
+  position: absolute;
+  top: 40%;
+  left: 5px; }
+.navigation .owl-next {
+  float: right;
+  position: absolute;
+  top: 40%;
+  right: 5px; }
+.navigation .owl-theme .owl-nav [class*=owl-]:hover {
+  background: transparent; }
+.navigation .owl-carousel .owl-nav button.owl-next:focus,
+.navigation .owl-carousel .owl-nav button.owl-prev:focus,
+.navigation .owl-carousel button.owl-dot:focus {
+  border: none;
+  outline: none; }
+.navigation .fa-angle-left,
+.navigation .fa-angle-right {
+  color: white;
+  font-size: 30px; }
+.navigation .owl-dots {
+  position: absolute;
+  top: 85%;
+  left: 45%; }
+
+.service .service-vip {
+  padding: 10px;
+  border: 1px solid;
+  max-width: 100%;
+  overflow: hidden; }
+
+#dich-vu .fix-w-h {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 5px solid #f2c341;
+  position: relative; }
+  #dich-vu .fix-w-h:hover img {
+    transform: scale(1.1);
+    transition: all .4s ease-in-out;
+    filter: blur(2px); }
+  #dich-vu .fix-w-h:hover .caption {
+    transform: translateY(-70%);
+    transition: all .4s; }
+#dich-vu .slide-img {
+  position: absolute;
+  top: 0;
+  right: 0; }
+#dich-vu h2 {
+  color: black;
+  font-family: 'UTM Neo Sans Intel'; }
+#dich-vu h4 {
+  font-family: "UTM Neo Sans Intel";
+  color: white; }
+#dich-vu .project-item {
+  max-width: 100%;
+  overflow: hidden; }
+#dich-vu .btn-view button {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 5px 10px; }
+  #dich-vu .btn-view button:hover {
+    background: white;
+    color: #000000;
+    border: 1px solid black;
+    transition: all .2s ease-in-out; }
+#dich-vu img {
+  max-width: 100%; }
+#dich-vu .caption {
+  position: absolute;
+  text-transform: uppercase;
+  top: 80%;
+  font-size: 20px;
+  width: 100%; }
+  #dich-vu .caption .btn {
+    display: inline-block;
+    padding: 13px 20px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    background: transparent;
+    border: 1px solid #e1e1e1;
+    font: 12px/1.2 "Oswald", sans-serif;
+    letter-spacing: 0.4em;
+    text-align: center;
+    text-indent: 2px;
+    text-transform: uppercase;
+    transition: color 0.1s linear 0.05s; }
+    #dich-vu .caption .btn:hover {
+      color: #373737;
+      transition: color 0.1s linear 0s; }
+
+#contact {
+  padding-top: 0px;
+  padding-bottom: 0; }
+  #contact #form-contact {
+    width: 50%;
+    margin: 0 auto; }
+    #contact #form-contact .form-control {
+      background-color: transparent;
+      border-color: rgba(0, 0, 0, 0.1);
+      /* border-color: rgba(255,255,255,.1); */
+      height: 50px;
+      border-radius: 0;
+      box-shadow: none; }
+    #contact #form-contact .form-group {
+      margin-bottom: 30px; }
+      #contact #form-contact .form-group .btn-submit {
+        display: block;
+        padding: 12px;
+        width: 100%;
+        color: #fff;
+        border: 0;
+        margin-top: 40px;
+        background: #f35e01; }
+    #contact #form-contact textarea.form-control {
+      min-height: 180px;
+      resize: none; }
+  #contact .heading {
+    padding-top: 40px;
+    padding-bottom: 20px; }
+  #contact h2 {
+    font-family: "UTM Neo Sans Intel"; }
+  #contact p {
+    font-family: "UTM Neo Sans Intel"; }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .btn-menu {
+    left: 91%;
+    top: calc(30% + 13px);
+    display: block; } }
 @media screen and (min-width: 240px) and (max-width: 768px) {
   .video {
     max-width: 100%;
@@ -510,7 +715,8 @@ body {
 
   .btn-menu {
     left: 91%;
-    top: calc(30% + 13px); }
+    top: calc(30% + 13px);
+    display: block; }
 
   .section-1 .title .nd p {
     font-size: 12px; }
@@ -575,9 +781,6 @@ body {
   .slideshow .arrows .next {
     right: 0; }
 
-  .Outstanding-project .caption a {
-    justify-content: flex-end; }
-
   .Outstanding-project img {
     height: 100%; }
 
@@ -622,6 +825,15 @@ body {
   #team .cquotes ul li.right img {
     float: none;
     max-width: 100%;
-    margin: 0; } }
+    margin: 0; }
+
+  #contact #form-contact {
+    width: 100%; }
+
+  .ct-title {
+    padding-bottom: 20px; }
+
+  #contact .heading {
+    padding-top: 20px; } }
 
 /*# sourceMappingURL=style.css.map */

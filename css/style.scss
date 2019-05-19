@@ -7,7 +7,7 @@ $font-size-menu:18px;
 
 // section-1
 $color-noi-dung-section-1:#ffffff;
-$font-size-title:64px;
+$font-size-title:40px;
 $font-size-p:14px;
 // end
 // dự án nổi bật
@@ -23,6 +23,10 @@ $color-title-location:#f35e01;
 
 // end
 
+// font
+$font-tilte:'UTM Neo Sans Intel';
+$font-discription: 'Segoe UI';
+
 // window onload
 .fixed {
     width: 100%;
@@ -37,8 +41,9 @@ $color-title-location:#f35e01;
 
 .header.fixed img {
     height: 40px !important;
-    transition: height 0.6s;
+    transition: all 0.4s;
 }
+
 
 .active-2 {
     color: $color-hover-item-header !important;
@@ -407,7 +412,7 @@ body {
             color: $color-noi-dung-section-1;
             font-size: $font-size-title;
             font-weight: 500;
-            font-family: 'UTM Neo Sans Intel';
+            font-family: $font-tilte;
         }
 
         .nd {
@@ -415,8 +420,7 @@ body {
                 color: $color-noi-dung-section-1;
                 font-size: $font-size-p;
                 display: block;
-                font-weight: 100;
-                font-family: 'UTM Neo Sans Intel';
+                font-family: $font-discription
             }
         }
 
@@ -454,17 +458,10 @@ body {
     .caption {
         position: absolute;
         text-transform: uppercase;
-        top: 85%;
-        left: 30%;
+        top: 88%;
         font-size: 20px;
+        width: 100%;
 
-        a {
-            display: flex;
-            text-decoration: none;
-            color: white;
-            justify-content: center;
-            font-family: 'UTM Neo Sans Intel';
-        }
 
         .btn {
             @include btn();
@@ -479,6 +476,11 @@ body {
     h2 {
         color: $color-h2;
         font-family: 'UTM Neo Sans Intel';
+    }
+
+    h4 {
+        font-family: $font-tilte;
+        color: white;
     }
 
     img {
@@ -553,7 +555,7 @@ body {
         height: 75px;
         display: -webkit-box;
         -webkit-box-orient: vertical;
-        font-family: 'UTM Neo Sans Intel';
+        font-family: $font-discription;
     }
 
     .line-left {
@@ -589,7 +591,7 @@ body {
 }
 
 .contact {
-    background-image: url(https://idoltv.vn/wp-content/uploads/2018/10/IDOLTV-hinh-nen-game-fortnite-may-tinh-full-hd-903573.jpg);
+    background-image: url(http://wallpaper.phunuvn.net/webmaster/wallpapers/hinh-nen-noi-that/19731-interior-design-1920x1080-photography-wallpaper.jpg);
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -623,6 +625,10 @@ body {
         color: $color-title-location;
         text-transform: uppercase;
         font-family: 'UTM Neo Sans Intel';
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 10px;
+        padding-top: 10px;
     }
 }
 
@@ -668,6 +674,14 @@ body {
 
     .full-nd-intro {
         color: black;
+    }
+
+    h2 {
+        font-family: $font-tilte;
+    }
+
+    p {
+        font-family: $font-tilte;
     }
 
     .cquotes {
@@ -720,6 +734,8 @@ body {
         h2 {
             text-align: center;
             color: #fff;
+            font-family: $font-tilte;
+            padding-bottom: 10px;
         }
 
         .clearer {
@@ -728,9 +744,315 @@ body {
 
         p {
             line-height: 20px;
+            font-family: $font-tilte;
+        }
+
+        strong {
+            font-family: $font-tilte;
         }
     }
 }
 
 // end
+
+// newfeed
+
+.navigation {
+
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+        border: none;
+        color: $color-hover-item-header;
+
+
+    }
+
+    .nav-tabs .nav-link:focus,
+    .nav-tabs .nav-link {
+
+        &:hover {
+            border: none;
+        }
+    }
+
+    .nav-tabs .nav-item .nav-link {
+        text-transform: uppercase;
+        font-family: $font-tilte;
+    }
+
+    ul li a {
+        color: #000000;
+
+        &:hover {
+            color: $color-hover-item-header;
+        }
+    }
+
+    .card {
+        // margin: 0 10px;
+        outline: none;
+        border: none;
+    }
+
+    .card-body {
+        padding: 0;
+    }
+
+    .card-text {
+        overflow: hidden;
+        // text-overflow: ellipsis;
+        line-height: 25px;
+        // -webkit-line-clamp: 3;
+        // height: 75px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        font-family: 'UTM Neo Sans Intel';
+    }
+
+    .line-left {
+        width: 30px;
+        height: 5px;
+        background: #f35e01;
+    }
+
+    span {
+        font-weight: bold;
+        font-family: 'UTM Neo Sans Intel';
+    }
+
+    h4,
+    h2 {
+        font-family: 'UTM Neo Sans Intel';
+    }
+
+    .tab-pane.active {
+        animation: slide-down 0.5s ease-out;
+    }
+
+    .post-icon {
+        position: absolute;
+        z-index: 99;
+        top: 10px;
+        border-radius: 15%;
+        background: #f2c341;
+        left: 90%;
+        padding: 0px 7px;
+    }
+
+    .fa-picture-o {
+        color: white;
+    }
+
+    .post-meta {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        color: #fff;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 600;
+        z-index: 99;
+    }
+
+    @keyframes slide-down {
+        0% {
+            opacity: 0;
+            transform: translateY(100%);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .owl-prev {
+        float: left;
+        position: absolute;
+        top: 40%;
+        left: 5px;
+
+    }
+
+    .owl-next {
+        float: right;
+        position: absolute;
+        top: 40%;
+        right: 5px;
+
+    }
+
+    .owl-theme .owl-nav [class*=owl-] {
+        &:hover {
+            background: transparent;
+        }
+    }
+
+    .owl-carousel .owl-nav button.owl-next,
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel button.owl-dot {
+        &:focus {
+            border: none;
+            outline: none;
+        }
+    }
+
+    .fa-angle-left,
+    .fa-angle-right {
+        color: white;
+        font-size: 30px;
+    }
+
+    .owl-dots {
+        position: absolute;
+        top: 85%;
+        left: 45%;
+    }
+}
+
+// end
+
+// dich vu
+.service {
+    .service-vip {
+        padding: 10px;
+        border: 1px solid;
+        max-width: 100%;
+        overflow: hidden;
+    }
+}
+
+#dich-vu {
+    .fix-w-h {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border: 5px solid #f2c341;
+        position: relative;
+
+        &:hover {
+            img {
+                transform: scale(1.1);
+                transition: all .4s ease-in-out;
+                filter: blur(2px);
+
+            }
+
+            .caption {
+                transform: translateY(-70%);
+                transition: all .4s;
+            }
+        }
+
+
+    }
+
+    .slide-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    h2 {
+        color: black;
+        font-family: 'UTM Neo Sans Intel';
+    }
+
+    h4 {
+        font-family: $font-tilte;
+        color: white;
+    }
+
+    .project-item {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .btn-view button {
+        @include button-view(transparent, white, 5px, 10px);
+
+        &:hover {
+            background: white;
+            color: #000000;
+            border: 1px solid black;
+            transition: all .2s ease-in-out;
+        }
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .caption {
+        position: absolute;
+        text-transform: uppercase;
+        top: 80%;
+        font-size: 20px;
+        width: 100%;
+
+
+        .btn {
+            @include btn();
+
+            &:hover {
+                color: #373737;
+                transition: color 0.1s linear 0s;
+            }
+        }
+    }
+}
+
+// liên hệ
+#contact {
+    padding-top: 0px;
+    padding-bottom: 0;
+
+    #form-contact {
+        width: 50%;
+        margin: 0 auto;
+
+        .form-control {
+            background-color: transparent;
+            border-color: rgba(0, 0, 0, .1);
+            /* border-color: rgba(255,255,255,.1); */
+            height: 50px;
+            border-radius: 0;
+            box-shadow: none;
+        }
+
+        .form-group {
+            margin-bottom: 30px;
+
+            .btn-submit {
+                display: block;
+                padding: 12px;
+                width: 100%;
+                color: #fff;
+                border: 0;
+                margin-top: 40px;
+                background: $background-project;
+            }
+        }
+
+        textarea.form-control {
+            min-height: 180px;
+            resize: none;
+        }
+
+    }
+
+    .heading {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    h2 {
+        font-family: $font-tilte;
+    }
+
+    p {
+        font-family: $font-tilte;
+    }
+}
+
 @import "responsive";

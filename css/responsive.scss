@@ -1,6 +1,12 @@
 @media screen and (min-width: 1024px) and (max-width: 1200px) {}
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .btn-menu {
+        left: 91%;
+        top: calc(30% + 13px);
+        display: block;
+    }
+}
 
 @media screen and (min-width: 240px) and (max-width: 768px) {
     .video {
@@ -31,6 +37,7 @@
     .btn-menu {
         left: 91%;
         top: calc(30% + 13px);
+        display: block;
     }
 
     .section-1 .title .nd p {
@@ -117,10 +124,6 @@
         right: 0;
     }
 
-    .Outstanding-project .caption a {
-        justify-content: flex-end;
-    }
-
     .Outstanding-project img {
         height: 100%;
     }
@@ -172,5 +175,14 @@
         float: none;
         max-width: 100%;
         margin: 0;
+    }
+    #contact #form-contact{
+        width: 100%;
+    }
+    .ct-title{
+        padding-bottom: 20px;
+    }
+    #contact .heading{
+        padding-top: 20px;
     }
 }

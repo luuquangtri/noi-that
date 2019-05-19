@@ -1,48 +1,4 @@
 @font-face {
-    font-family: 'UTM Neo Sans Intel';
-    src: url('UTMNeoSansIntel.eot');
-    src: url('UTMNeoSansIntel.eot?#iefix') format('embedded-opentype'),
-        url('UTMNeoSansIntel.woff2') format('woff2'),
-        url('UTMNeoSansIntel.woff') format('woff'),
-        url('UTMNeoSansIntel.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'UTM Neo Sans Intel';
-    src: url('UTMNeoSansIntel_1.eot');
-    src: url('UTMNeoSansIntel_1.eot?#iefix') format('embedded-opentype'),
-        url('UTMNeoSansIntel_1.woff2') format('woff2'),
-        url('UTMNeoSansIntel_1.woff') format('woff'),
-        url('UTMNeoSansIntel_1.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'UTM Neo Sans Intel';
-    src: url('UTMNeoSansIntel_2.eot');
-    src: url('UTMNeoSansIntel_2.eot?#iefix') format('embedded-opentype'),
-        url('UTMNeoSansIntel_2.woff2') format('woff2'),
-        url('UTMNeoSansIntel_2.woff') format('woff'),
-        url('UTMNeoSansIntel_2.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'UTM Neo Sans Intel';
-    src: url('UTMNeoSansIntel_3.eot');
-    src: url('UTMNeoSansIntel_3.eot?#iefix') format('embedded-opentype'),
-        url('UTMNeoSansIntel_3.woff2') format('woff2'),
-        url('UTMNeoSansIntel_3.woff') format('woff'),
-        url('UTMNeoSansIntel_3.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'Segoe UI';
     src: url('SegoeUI-Light.eot');
     src: url('SegoeUI-Light.eot?#iefix') format('embedded-opentype'),
