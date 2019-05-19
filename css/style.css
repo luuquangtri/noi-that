@@ -834,6 +834,9 @@ body {
     padding-bottom: 20px; }
 
   #contact .heading {
-    padding-top: 20px; } }
+    padding-top: 20px; }
+
+  .nav-tabs .nav-item {
+    margin: 0; } }
 
 /*# sourceMappingURL=style.css.map */
