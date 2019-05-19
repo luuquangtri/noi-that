@@ -556,10 +556,8 @@ body {
   z-index: 99; }
 @keyframes slide-down {
   0% {
-    opacity: 0;
     transform: translateY(100%); }
   100% {
-    opacity: 1;
     transform: translateY(0); } }
 .navigation .owl-prev {
   float: left;
