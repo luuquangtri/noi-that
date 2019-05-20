@@ -99,7 +99,23 @@ body::-webkit-scrollbar-thumb {
 
     .nav-item {
         padding: 0 5px;
-
+        position: relative;
+        &::before{
+            position: absolute;
+            content:'';
+            width: 0;
+            background: $color-hover-item-header;
+            height: 3px;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &:hover{
+            &::before{
+                width: 100%;
+                transition: all 0.3s ease-in-out;
+            }
+        }
         .nav-link {
             font-size: $font-size-menu;
             text-transform: uppercase;
@@ -541,10 +557,18 @@ body {
         margin: 0 10px;
         outline: none;
         border: none;
+        &:hover{
+            box-shadow: 1px -1px 10px -1px;
+            transition: 0.5s;
+            transform: translateY(-2%);
+            .card-text{
+                color: $color-hover-item-header;
+            }
+        }
     }
 
     .card-body {
-        padding: 0;
+        padding: 0 15px;
     }
 
     .card-text {

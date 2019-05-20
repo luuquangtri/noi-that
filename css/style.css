@@ -31,7 +31,20 @@ body::-webkit-scrollbar-thumb {
 .header {
   box-shadow: 0px 4px 10px -6px; }
   .header .nav-item {
-    padding: 0 5px; }
+    padding: 0 5px;
+    position: relative; }
+    .header .nav-item::before {
+      position: absolute;
+      content: '';
+      width: 0;
+      background: #fc4303;
+      height: 3px;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%); }
+    .header .nav-item:hover::before {
+      width: 100%;
+      transition: all 0.3s ease-in-out; }
     .header .nav-item .nav-link {
       font-size: 18px;
       text-transform: uppercase;
@@ -351,8 +364,14 @@ body {
   margin: 0 10px;
   outline: none;
   border: none; }
+  .tintuc-new .card:hover {
+    box-shadow: 1px -1px 10px -1px;
+    transition: 0.5s;
+    transform: translateY(-2%); }
+    .tintuc-new .card:hover .card-text {
+      color: #fc4303; }
 .tintuc-new .card-body {
-  padding: 0; }
+  padding: 0 15px; }
 .tintuc-new .card-text {
   overflow: hidden;
   text-overflow: ellipsis;
